@@ -6,8 +6,8 @@ import TodoList from "./signup/TodoList";
 export default function Todo () {
     const[todoItems, setTodoItems] = useState();
     return (
-    <main>
-        <h1>Chekov Todo List</h1>
+    <main className="bg-violet-900 min-h-screen text-orange-50 px-4 py-8 text-center">
+        <h1 className="text-3xl font-semibold mb-4">Chekov Todo List</h1>
         <AddTodo todoItems={todoItems} setTodoItems={setTodoItems}/>
         <TodoList todoItems={todoItems} setTodoItems={setTodoItems}/>
         </main>
